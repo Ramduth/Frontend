@@ -48,12 +48,12 @@ const cardData = [
 ];
 function Second() {
   return (
-    <div className="flex flex-col px-4 md:px-16 max-w-screen-2xl mx-auto ">
-      <div className="flex flex-col ">
-        <h1 className="font-Manrope font-semibold text-[24px] md:text-[28px] xl:text-[40px] 2xl:[48px] text-[#000000]">
+    <div className="flex flex-col px-4 md:px-16 ">
+      <div className="flex flex-col ml-[2px] mb-15">
+        <h1 className="font-Manrope font-semibold text-5xl text-[#000000]">
           Why Choose
         </h1>
-        <h1 className="font-Manrope font-semibold text-[24px] md:text-[28px] xl:text-[40px] 2xl:[48px] text-[#695FD9]">
+        <h1 className="font-Manrope font-semibold text-5xl text-[#695FD9]">
           Pixl Passport SDK?
         </h1>
       </div>
