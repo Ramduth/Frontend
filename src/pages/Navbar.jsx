@@ -41,9 +41,9 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-screen-2xl mx-auto flex items-center justify-between px-4 md:px-14 py-6">
-        <Link to="./#">
+        <Link to="#">
         <div>
-          <img src={Logo} alt="Logo" className=" h-4 w-30 object-cover" />
+          <img src={Logo} alt="Logo" className=" h-5 w-35 object-cover" />
         </div>
         </Link>
 

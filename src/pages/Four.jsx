@@ -40,7 +40,7 @@ const cardData = [
 
 function Four() {
   return (
-    <div className="w-full flex px-4 md:px-16 max-w-screen-2xl mx-auto">
+    <div className="w-full flex px-4 md:px-16 max-w-screen-2xl mx-auto overflow-hidden">
       <div className="border flex flex-col gap-10 relative rounded-3xl p-8 lg:p-16 pb-6  bg-[#695FD9] lg:h-[90vh] xl:h-[80vh] 2xl:h-auto w-full">
         <div className="font-semibold text-[24px] z-50 md:text-[28px] xl:text-[40px] 2xl:[48px] font-Manrope text-[#FFFFFF]">
         <h1>Key Features of </h1>

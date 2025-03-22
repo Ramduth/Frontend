@@ -9,7 +9,7 @@ function Footer() {
       <div className=" flex flex-col gap-6 md:flex-row justify-between  py-8">
         <div className="flex flex-col gap-2 w-full lg:w-[540px]">
           <div>
-            <img src={Logo} alt="" cclassName="h-4 w-10 object-cover" />
+            <img src={Logo} alt="" className="h-5 w-35 object-cover" />
           </div>
           <p className="text-sm lg:text-lg font-Manrope">
             Simplify your document verification process with our Passport SDK.
