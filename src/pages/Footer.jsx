@@ -5,8 +5,8 @@ import Innovate from "../assets/Innovate.png";
 
 function Footer() {
   return (
-    <div className=" flex flex-col justify-between h-full gap-16 md:gap-30 px-4 md:px-16 w-full">
-      <div className="flex flex-col gap-6 md:flex-row justify-between  py-8">
+    <div className="max-w-screen-2xl mx-auto flex flex-col justify-between h-full gap-16 md:gap-30 px-4 md:px-16 w-full">
+      <div className=" flex flex-col gap-6 md:flex-row justify-between  py-8">
         <div className="flex flex-col gap-2 w-full lg:w-[540px]">
           <div>
             <img src={Logo} alt="" cclassName="h-4 w-10 object-cover" />

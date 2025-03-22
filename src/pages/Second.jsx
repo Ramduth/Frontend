@@ -48,7 +48,7 @@ const cardData = [
 ];
 function Second() {
   return (
-    <div className="flex flex-col px-4 md:px-16 ">
+    <div className="flex flex-col px-4 md:px-16 max-w-screen-2xl mx-auto ">
       <div className="flex flex-col ">
         <h1 className="font-Manrope font-semibold text-[24px] md:text-[28px] xl:text-[40px] 2xl:[48px] text-[#000000]">
           Why Choose

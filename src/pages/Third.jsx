@@ -29,7 +29,7 @@ function Third() {
   ];
 
   return (
-    <div className="bg-[#F7F7FD] py-15 px-6 flex flex-col gap-12">
+    <div className="bg-[#F7F7FD] py-15  flex flex-col gap-12 px-4 md:px-16 max-w-screen-2xl mx-auto">
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-[24px] md:text-[28px] xl:text-[40px] 2xl:[48px] font-semibold font-Manrope leading-none">
           Authentication of
