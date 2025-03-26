@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import Logo from "../assets/Logo.png";
 import { MdOutlineArrowDropDown, MdMenu } from "react-icons/md"; // Import hamburger menu icon
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import {
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTitle,
 } from "@/components/ui/sheet";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -41,20 +41,23 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-screen-2xl mx-auto flex items-center justify-between px-4 md:px-14 py-6">
-        <Link to="#">
+      <Link to="hero" smooth={true} duration={500} className="cursor-pointer">
         <div>
           <img src={Logo} alt="Logo" className=" h-5 w-35 object-cover" />
         </div>
         </Link>
 
         <div className="hidden md:flex gap-6">
-          <Link className="hover:text-blue-600 transition-colors">Home</Link>
-          <Link className="hover:text-blue-600 transition-colors">FAQs</Link>
+        <Link to="hero" smooth={true} duration={500} className="cursor-pointer">
+        Home
+      </Link>
+          {/* <Link className="hover:text-blue-600 transition-colors">Home</Link> */}
+          <Link to="second" smooth={true} duration={500} className="cursor-pointer">FAQs</Link>
           <div className="flex items-center gap-1 hover:text-blue-600 transition-colors cursor-pointer">
-            <Link>Industries</Link>
+          <Link to="third" smooth={true} duration={500} className="cursor-pointer">Industries</Link>
             <MdOutlineArrowDropDown />
           </div>
-          <Link className="hover:text-blue-600 transition-colors">Blogs</Link>
+          <Link to="four" smooth={true} duration={500} className="cursor-pointer">Blogs</Link>
         </div>
         <div className="flex gap-2">
           <Button className="px-4 py-2 rounded-[40px]">Contact Us</Button>
@@ -80,25 +83,25 @@ const Navbar = () => {
             </SheetTitle>
           </SheetHeader>
           <div className="flex flex-col gap-4 pl-6">
-            <Link
+          <Link to="hero" smooth={true} duration={500}
               onClick={() => setOpen(false)}
               className="text-lg hover:text-blue-600"
             >
               Home
             </Link>
-            <Link
+            <Link to="second" smooth={true} duration={500} 
               onClick={() => setOpen(false)}
               className="text-lg hover:text-blue-600"
             >
               FAQs
             </Link>
-            <Link
+            <Link to="third" smooth={true} duration={500} 
               onClick={() => setOpen(false)}
               className="text-lg hover:text-blue-600"
             >
               Industries
             </Link>
-            <Link
+            <Link to="four" smooth={true} duration={500}
               onClick={() => setOpen(false)}
               className="text-lg hover:text-blue-600"
             >

@@ -44,13 +44,13 @@ function Third() {
           <img src={Passport} alt="Passport" className="h-70 w-full lg:h-90 lg:w-200" />
         </div>
         <div className="rounded-[13.39px] bg-[#FFFFFF] w-full p-4">
-          <Accordion type="single" defaultValue="item-1" collapsible className="w-full p-4">
+          <Accordion type="single" defaultValue="item-1" collapsible className="w-[380px] md:w-full p-4">
             {accordionData.map((item, index) => (
               <AccordionItem key={index} value={`item-${index + 1}`}>
-                <AccordionTrigger className="text-[16px] lg:!text-lg 2xl:text-[20px] font-medium font-Manrope">
+                <AccordionTrigger className="text-[16px] lg:!text-lg  2xl:text-[20px] font-medium font-Manrope">
                   {item.title}
                 </AccordionTrigger>
-                <AccordionContent className="text-xs md:text-sm text-[#6F6F6F] font-Manrope">
+                <AccordionContent className="text-xs md:text-sm  text-[#6F6F6F] font-Manrope">
                   {item.content}
                 </AccordionContent>
               </AccordionItem>

@@ -1,19 +1,27 @@
 import React from "react";
 import Navbar from "../pages/Navbar";
 import Hero from "../pages/Hero";
-import Third from "../pages/Third";
-import Footer from "../pages/Footer";
-import Four from "./Four";
 import Second from "./Second";
+import Third from "../pages/Third";
+import Four from "./Four";
+import Footer from "../pages/Footer";
 
 function LandingPage() {
   return (
     <div className="flex flex-col gap-10 md:gap-18">
       <Navbar />
-      <Hero />
-      <Second />
-      <Third />
-      <Four />
+      <div id="hero">
+        <Hero />
+      </div>
+      <div id="second">
+        <Second />
+      </div>
+      <div id="third">
+        <Third />
+      </div>
+      <div id="four">
+        <Four />
+      </div>
       <Footer />
     </div>
   );
